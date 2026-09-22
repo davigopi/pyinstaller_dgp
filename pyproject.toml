@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyinstaller_dgp"
+version = "0.1.0"
+dependencies = [
+    "PyInstaller==6.22.3",
+    "git_dgp @ git+https://github.com/davigopi/git_dgp.git@4959a527940065b6311bc64253aa1fbc21fe26f6",
+    "pipreqs==0.5.0",
+]
+
+[tool.setuptools]
+py-modules = ["pyinstaller_dgp"]
